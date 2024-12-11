@@ -21,11 +21,12 @@ app.add_middleware(CORSMiddleware,
 
 class database:
     def __init__(self):
-        self.conn = mysql.connector.connect(user='root',
-                                            host='localhost',
-                                            password='',
-                                            database='home_foods'
-                                            )
+        self.conn = mysql.connector.connect(
+        host='b1zolhaun1gzw2rk6kam-mysql.services.clever-cloud.com',
+        user='uvhvti04cft8hyqp',
+        password='a0dLhRmVOKPMJjI9yUDa',
+        database='b1zolhaun1gzw2rk6kam'
+    )
 
     def cursor(self, dictionary=False):
         return self.conn.cursor(dictionary=dictionary)
